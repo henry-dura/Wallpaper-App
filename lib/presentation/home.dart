@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper/components/carousel.dart';
-import 'package:wallpaper/components/grid_view.dart';
-
+import 'components/carousel.dart';
+import 'components/grid_view.dart';
 import 'components/search_field.dart';
+
+
+
 
 class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  const SafeArea(
+    return   const SafeArea(
       child: Scaffold(
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 10),
