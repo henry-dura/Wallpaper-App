@@ -12,14 +12,15 @@ class SearchField extends StatelessWidget {
       style: const TextStyle(
         // fontSize: 25,
           fontWeight: FontWeight.w600,
-          color: Colors.white70),
+          // color: Colors.white70
+      ),
       decoration: InputDecoration(
         hintText: 'Search wallpaper name',
-        hintStyle: const TextStyle(color: Colors.white70),
+        // hintStyle: const TextStyle(color: Colors.white70),
         suffixIcon: const Icon(
           Icons.search,
           size: 30,
-          color: Colors.white70,
+          // color: Colors.white70,
         ),
         filled: true,
         fillColor: Colors.grey,

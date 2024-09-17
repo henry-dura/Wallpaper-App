@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:wallpaper/bloc/wallpaper_bloc.dart';
+import 'package:wallpaper/data/repository.dart';
 import 'package:wallpaper/presentation/home.dart';
 
 void main() {
@@ -11,7 +14,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return BlocProvider(
+  create: (context) => WallpaperBloc(WallpaperRepository()),
+  child: MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -33,7 +38,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Home(),
-    );
+    ),
+);
   }
 }
 
