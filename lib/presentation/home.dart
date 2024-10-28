@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   const SafeArea(
+    return    SafeArea(
       child: Scaffold(
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 10),
@@ -23,21 +23,7 @@ class Home extends StatelessWidget {
               SearchField(),
               Text('My Favourites',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
               CustomCarousel(),
-              // SizedBox(height: 10,),
-              // SizedBox(
-              //   height: 25,
-              //   child: TabBar(
-              //     // controller: _tabController,
-              //     labelColor: Colors.black,
-              //     indicatorColor: Colors.blue,
-              //     tabs: [
-              //       Tab(text: 'Tab 1'),
-              //       Tab(text: 'Tab 2'),
-              //       Tab(text: 'Tab 3'),
-              //     ],
-              //   ),
-              // ),
-              // Expanded(child: WallPaperGrid())
+
               Expanded(child: CustomTabBarView())
             ],
           ),

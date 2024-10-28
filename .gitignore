@@ -44,7 +44,7 @@ app.*.map.json
 /android/app/release
 
 # Added by me
-/lib/secrets
-/linux
-/web
-/macos
+/lib/secrets/
+/linux/
+/web/
+/macos/
